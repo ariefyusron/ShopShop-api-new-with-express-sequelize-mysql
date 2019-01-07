@@ -4,7 +4,7 @@ exports.index = (req,res) => {
   models.Order.findAll({
     include: [
       models.Product,
-      models.Transaction
+      {model: models.Transaction, where: {id: req.userData.id}}
     ]
   })
     .then((results) => {
