@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Order = sequelize.define('Order', {
     product_id: DataTypes.INTEGER,
-    transaction_id: DataTypes.INTEGER,
+    user_id: DataTypes.INTEGER,
     qty: DataTypes.INTEGER,
     price: DataTypes.INTEGER
   }, {});
@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
     Order.belongsTo(models.Product, {
       foreignKey:'product_id'
     }),
-    Order.belongsTo(models.Transaction, {
-      foreignKey:'transaction_id'
+    Order.belongsTo(models.User, {
+      foreignKey:'user_id'
     })
   };
   return Order;
