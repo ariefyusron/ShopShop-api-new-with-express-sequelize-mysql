@@ -10,3 +10,6 @@ Run the following command to run startup migrations.
 ```js
 npm run migrate
 ```
+
+#Nb:
+Don't forget run mysql
