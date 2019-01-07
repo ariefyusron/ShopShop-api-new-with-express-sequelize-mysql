@@ -11,9 +11,7 @@ Run the following command to run startup migrations.
 npm run migrate
 ```
 
-### Start
-
-Run the following command to run startup migrations.
+### Start Server
 
 ```js
 npm start
