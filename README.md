@@ -11,5 +11,13 @@ Run the following command to run startup migrations.
 npm run migrate
 ```
 
+### Start
+
+Run the following command to run startup migrations.
+
+```js
+npm start
+```
+
 ## Nb:
 Don't forget run mysql
