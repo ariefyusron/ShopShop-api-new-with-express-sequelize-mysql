@@ -3,11 +3,13 @@ const app = express()
 const bodyParser = require('body-parser')
 const port = process.env.PORT
 
-app.get((req,res) => {
-  res.json('welcom to api ShopShop')
-})
+const route = require('./routes')
 
+app.get('',(req,res) => {
+  res.json('Welcome to API ShopShop')
+})
 app.use(bodyParser.json())
+app.use(route)
 
 app.listen(port,() => {
   console.log('Listening on '+port)
